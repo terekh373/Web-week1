@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ІдеяПульс — дошка ідей та фідбеку для команди і клієнтів</title>
+<meta name="description" content="ІдеяПульс — платформа, де співробітники та клієнти пропонують ідеї, голосують, а команда відповідає та впроваджує найкраще." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a class="logo" href="#top" aria-label="ІдеяПульс — на головну">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z" fill="white" opacity=".95"/>
+          <path d="M9 20h6v1.2a1.3 1.3 0 0 1-1.3 1.3h-3.4A1.3 1.3 0 0 1 9 21.2V20Z" fill="white" opacity=".75"/>
+          <path d="M12 5.5v4M10.2 7.5h3.6" stroke="#5b5bf0" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>ІдеяПульс<small>дошка ідей та фідбеку</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Головна навігація">
+      <a class="nav-link" href="#benefits">Переваги</a>
+      <a class="nav-link" href="#how">Як це працює</a>
+      <a class="nav-link" href="#reviews">Відгуки</a>
+      <a class="nav-link" href="#contact">Контакти</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Спробувати безкоштовно</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge"><span class="dot"></span> Новинка: AI-підсумки фідбеку та дублікати ідей</span>
+        <h1>Перетворіть ідеї співробітників і клієнтів на <span class="grad">рішення, які ростуть</span></h1>
+        <p class="lead">ІдеяПульс — єдина дошка, де люди пропонують ідеї, голосують за найкращі, а ваша команда прозоро відповідає: що взяли в роботу, а що вже запущено.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Створити дошку — безкоштовно →</a>
+          <a href="#how" class="btn btn-ghost">Дивитись як це працює</a>
+        </div>
+        <div class="hero-note">
+          <span>✓ Без картки •</span><span>✓ Запуск за 5 хвилин •</span><span>✓ Українською</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><b><span class="counter" data-target="4800">0</span>+</b><span>ідей зібрано</span></div>
+          <div class="stat"><b><span class="counter" data-target="320">0</span>+</b><span>компаній з нами</span></div>
+          <div class="stat"><b><span class="counter" data-target="94">0</span>%</b><span>команд відповідають за 48 год</span></div>
+        </div>
+      </div>
+
+      <div class="board" role="img" aria-label="Приклад дошки ідей ІдеяПульс">
+        <div class="board-top">
+          <div class="traffic"><i></i><i></i><i></i></div>
+          <b>ideapulse.app/ваша-компанія</b>
+          <span class="pill">● Live-дошка</span>
+        </div>
+        <div class="board-body" id="board">
+          <div class="idea">
+            <button class="vote" aria-label="Голосувати">▲<span class="count">128</span><small>голос</small></button>
+            <div><h4>Мобільний застосунок для трекінгу задач <span class="status work">● В роботі</span></h4><p>Олена К. • 12 коментарів • оновлено 2 год тому</p><div class="tags"><span class="tag violet">Продукт</span><span class="tag green">Топ тижня</span></div></div>
+          </div>
+          <div class="idea">
+            <button class="vote" aria-label="Голосувати">▲<span class="count">96</span><small>голос</small></button>
+            <div><h4>Гнучкий графік по п'ятницях <span class="status done">● Впроваджено</span></h4><p>HR-відділ • 34 коментарі • відповідь CEO всередині</p><div class="tags"><span class="tag green">HR</span><span class="tag">Команда</span></div></div>
+          </div>
+          <div class="idea">
+            <button class="vote" aria-label="Голосувати">▲<span class="count">74</span><small>голос</small></button>
+            <div><h4>Кешбек для постійних клієнтів <span class="status new">● Нова</span></h4><p>Марко П. (клієнт) • 8 коментарів • чекає на відповідь</p><div class="tags"><span class="tag orange">Маркетинг</span><span class="tag">Клієнти</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="section" id="benefits">
+    <div class="container">
+      <p class="eyebrow reveal">Чому ІдеяПульс</p>
+      <h2 class="reveal">Все для ідей — від пропозиції до результату</h2>
+      <p class="sub reveal">Більше жодних загублених повідомлень у чатах і поштових скриньках. Один простір для діалогу з командою та клієнтами.</p>
+      <div class="grid-4">
+        <article class="card reveal">
+          <div class="icon" style="background:#ede9ff">💬</div>
+          <h3>Усі ідеї в одному місці</h3>
+          <p>Співробітники та клієнти додають ідеї за 30 секунд — з телефона чи комп'ютера, навіть без реєстрації за посиланням.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon" style="background:#dcf7e9">📊</div>
+          <h3>Голосування та пріоритети</h3>
+          <p>Лайки-голоси автоматично піднімають найцінніше вгору. Ви одразу бачите, що справді важливо людям.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon" style="background:#fff1cf">🤝</div>
+          <h3>Прозорі відповіді команди</h3>
+          <p>Статуси «Нова → В роботі → Впроваджено», коментарі та роадмап довіри. Кожен автор отримує сповіщення.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon" style="background:#ffe4ef">🚀</div>
+          <h3>Аналітика для рішень</h3>
+          <p>Теги, фільтри, експорт і AI-підсумки: які теми набирають обертів і що впровадити наступним.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="section" id="how" style="padding-top:0">
+    <div class="container">
+      <div class="steps reveal">
+        <p class="eyebrow" style="color:#c7cbff">Як це працює</p>
+        <h2>Запуск за 5 хвилин — у 3 кроки</h2>
+        <p class="sub">Не потрібні розробники чи інструкції на 20 сторінок. Все інтуїтивно.</p>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Створіть дошку</h3>
+            <p>Оберіть шаблон: для співробітників, клієнтів або продукту. Додайте логотип і правила.</p>
+            <div class="mini">✨ Приклад: «Ідеї для офісу», «Покращення сервісу», «Фічі застосунку»</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Збирайте ідеї та голоси</h3>
+            <p>Поділіться посиланням у чаті чи на сайті. Люди пишуть, коментують і голосують.</p>
+            <div class="mini">📈 Топ-ідеї автоматично потрапляють у добірку тижня</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Відповідайте та впроваджуйте</h3>
+            <p>Міняйте статуси, дякуйте авторам і показуйте результат. Довіра зростає.</p>
+            <div class="mini">✅ Автор отримує лист: «Вашу ідею впроваджено! Дякуємо!»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews" style="padding-top:10px">
+    <div class="container">
+      <p class="eyebrow reveal">Відгуки</p>
+      <h2 class="reveal">Команди, які вже чують своїх людей</h2>
+      <p class="sub reveal">Від стартапів до великих компаній — ІдеяПульс стає місцем, куди хочеться повертатись.</p>
+      <div class="grid-3">
+        <article class="card review reveal">
+          <div class="stars" aria-label="5 з 5">★★★★★</div>
+          <p>«Раніше ідеї тонули в Slack. Тепер у нас 200+ пропозицій за квартал, і ми нарешті впровадили гнучкі п'ятниці — люди в захваті!»</p>
+          <div class="person"><span class="avatar" style="background:linear-gradient(135deg,#5b5bf0,#9b5bf0)">ОК</span><div><b>Олена Ковальчук</b><span>HRD, IT-компанія «Софтлайн»</span></div></div>
+        </article>
+        <article class="card review reveal">
+          <div class="stars" aria-label="5 з 5">★★★★★</div>
+          <p>«Поставили віджет на сайт — клієнти самі підказують, що покращити. Конверсія в повторні покупки зросла на 18%.»</p>
+          <div class="person"><span class="avatar" style="background:linear-gradient(135deg,#22c9a3,#0ea5e9)">МП</span><div><b>Марко Петренко</b><span>засновник кав'ярні «Ранкова»</span></div></div>
+        </article>
+        <article class="card review reveal">
+          <div class="stars" aria-label="5 з 5">★★★★★</div>
+          <p>«Найбільше люблю статуси та відповіді. Клієнт бачить: його почули. Підтримка стала отримувати на 30% менше однакових запитів.»</p>
+          <div class="person"><span class="avatar" style="background:linear-gradient(135deg,#f59e0b,#ec4899)">ІШ</span><div><b>Ірина Шевченко</b><span>продакт-менеджерка, FinApp</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FORM -->
+  <section class="section" id="contact" style="padding-top:10px">
+    <div class="container split">
+      <div class="cta-card reveal">
+        <h3>Готові почути найкращі ідеї?</h3>
+        <p>Залиште заявку — покажемо демо, допоможемо запустити першу дошку та налаштувати голосування.</p>
+        <ul class="cta-list">
+          <li><span class="check">✓</span> 14 днів безкоштовно, без картки</li>
+          <li><span class="check">✓</span> Імпорт ідей з Excel / Trello / чатів</li>
+          <li><span class="check">✓</span> Підтримка українською 7 днів на тиждень</li>
+        </ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-weight:700">📞 +38 (044) 300-20-20</span>
+          <span style="background:rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-weight:700">✉️ hello@ideapulse.ua</span>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>Форма зворотного зв'язку</h3>
+        <p>Відповімо протягом одного робочого дня 💌</p>
+        <form id="feedbackForm" novalidate>
+          <div class="row2">
+            <div>
+              <label for="name">Ім'я *</label>
+              <input id="name" name="name" type="text" placeholder="Як до вас звертатись?" autocomplete="name" />
+              <div class="error" id="err-name"></div>
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="you@company.ua" autocomplete="email" />
+              <div class="error" id="err-email"></div>
+            </div>
+          </div>
+          <label for="type">Хто ви?</label>
+          <select id="type" name="type">
+            <option>Керівник / HR — хочу ідеї від команди</option>
+            <option>Власник бізнесу — хочу фідбек від клієнтів</option>
+            <option>Продакт-менеджер — хочу роадмап ідей</option>
+            <option>Інше</option>
+          </select>
+          <label for="message">Ваше повідомлення *</label>
+          <textarea id="message" name="message" placeholder="Наприклад: у нас 40 співробітників, хочемо збирати ідеї для офісу та продукту…"></textarea>
+          <div class="error" id="err-message"></div>
+          <label class="agree"><input type="checkbox" id="agree" checked /> <span>Погоджуюсь на обробку персональних даних та отримання демо-листа від ІдеяПульс.</span></label>
+          <div class="error" id="err-agree"></div>
+          <button type="submit" class="btn btn-primary form-btn">Надіслати заявку 🚀</button>
+          <div class="hint">Натискаючи кнопку, ви не купуєте слона — лише отримуєте демо 😊</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="footer">
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top" style="text-decoration:none"><span class="logo-mark" aria-hidden="true">💡</span><span>ІдеяПульс<small style="color:#8b90b3">дошка ідей та фідбеку</small></span></a>
+        <p>Допомагаємо командам і клієнтам говорити однією мовою: пропонуйте, голосуйте, впроваджуйте.</p>
+      </div>
+      <div><h4>Продукт</h4><ul><li><a href="#benefits">Переваги</a></li><li><a href="#how">Як це працює</a></li><li><a href="#reviews">Відгуки</a></li><li><a href="#contact">Тарифи та демо</a></li></ul></div>
+      <div><h4>Компанія</h4><ul><li><a href="#">Про нас</a></li><li><a href="#">Блог</a></li><li><a href="#">Вакансії</a></li><li><a href="#">Преса</a></li></ul></div>
+      <div><h4>Контакти</h4><ul><li><a href="mailto:hello@ideapulse.ua">hello@ideapulse.ua</a></li><li><a href="tel:+380443002020">+38 (044) 300-20-20</a></li><li>Київ, вул. Винахідників, 12</li></ul></div>
+    </div>
+    <div class="bottom"><span>© <span id="year">2026</span> ІдеяПульс. Зроблено з 💛 в Україні.</span><span><a href="#" style="color:inherit;text-decoration:none">Політика конфіденційності</a> • <a href="#" style="color:inherit;text-decoration:none">Умови використання</a></span></div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Догори">↑</button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var header = document.getElementById('header');
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  var toTop = document.getElementById('toTop');
+  var toast = document.getElementById('toast');
+
+  // Sticky header + toTop
+  function onScroll(){
+    if(window.scrollY > 10) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+    if(window.scrollY > 600) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  // Mobile menu
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function(e){
+    if(e.target.closest('a')){
+      menu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // Active nav link
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+  var sections = ['benefits','how','reviews','contact'].map(function(id){ return document.getElementById(id); });
+  function setActive(){
+    var pos = window.scrollY + 140, current = '';
+    sections.forEach(function(s){ if(s && s.offsetTop <= pos) current = s.id; });
+    links.forEach(function(a){
+      var href = a.getAttribute('href');
+      if(href === '#' + current) a.classList.add('active');
+      else a.classList.remove('active');
+    });
+  }
+  window.addEventListener('scroll', setActive, {passive:true});
+  setActive();
+
+  // Voting demo
+  document.querySelectorAll('.vote').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var countEl = btn.querySelector('.count');
+      var n = parseInt(countEl.textContent, 10) || 0;
+      if(btn.classList.contains('voted')){
+        btn.classList.remove('voted');
+        countEl.textContent = n - 1;
+        showToast('Голос знято. Дякуємо за чесність 🙂');
+      } else {
+        btn.classList.add('voted');
+        countEl.textContent = n + 1;
+        btn.animate(
+          [{transform:'scale(1)'},{transform:'scale(1.15)'},{transform:'scale(1)'}],
+          {duration:250}
+        );
+        showToast('Дякуємо! Ваш голос зараховано 🎉');
+      }
+    });
+  });
+
+  // Reveal on scroll
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Counters
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var el = en.target, target = +el.dataset.target, start = null, dur = 1400;
+      function step(t){
+        if(!start) start = t;
+        var p = Math.min((t - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('uk-UA');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      cio.unobserve(el);
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('.counter').forEach(function(el){ cio.observe(el); });
+
+  // Toast
+  var toastTimer;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+
+  // Form validation + fake submit
+  var form = document.getElementById('feedbackForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var agree = document.getElementById('agree').checked;
+    var ok = true;
+
+    setErr('err-name', '');
+    setErr('err-email', '');
+    setErr('err-message', '');
+    setErr('err-agree', '');
+
+    if(name.length < 2){ setErr('err-name','Вкажіть, будь ласка, ваше ім’я (мін. 2 літери).'); ok = false; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ setErr('err-email','Схоже, в email є помилка. Перевірте, будь ласка.'); ok = false; }
+    if(message.length < 10){ setErr('err-message','Розкажіть трохи детальніше (мін. 10 символів).'); ok = false; }
+    if(!agree){ setErr('err-agree','Без згоди ми не зможемо вам відповісти 🙏'); ok = false; }
+
+    if(!ok){
+      showToast('Перевірте, будь ласка, підсвічені поля 👆');
+      return;
+    }
+
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Надсилаємо… ⏳';
+
+    setTimeout(function(){
+      try{
+        var saved = JSON.parse(localStorage.getItem('ideapulse_leads') || '[]');
+        saved.push({name:name, email:email, message:message, date:new Date().toISOString()});
+        localStorage.setItem('ideapulse_leads', JSON.stringify(saved));
+      }catch(err){}
+
+      form.reset();
+      document.getElementById('agree').checked = true;
+      btn.disabled = false;
+      btn.textContent = 'Надіслати заявку 🚀';
+      showToast('Дякуємо, ' + name.split(' ')[0] + '! Ми вже отримали заявку і скоро напишемо 💌');
+    }, 900);
+  });
+  function setErr(id, msg){ document.getElementById(id).textContent = msg; }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
